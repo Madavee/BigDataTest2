@@ -134,9 +134,6 @@ while True:
     observation = env.reset() # reset env
     prev_x = None
 
-  
-
-   # time_elapsed = (time.process_time()-time_start)
  
   if reward != 0: # Pong has either +1 or -1 reward exactly when game ends.
        RAM = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024.0
@@ -144,5 +141,4 @@ while True:
 
        print ('ep %d: game finished, reward: %f' % (episode_number, reward),'End Time: ', time.process_time(), 'time diff:', time_elapsed,'RAM Usage(KB):', RAM) , ('' if reward == -1 else ' !!!!!!!!')
 
-   # time_elapsed = (time.process_time()-time_start)
-    #print  (time_elapsed)
+  
