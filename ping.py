@@ -4,7 +4,7 @@ import pickle as pickle
 import gym
 
 
-# hyperparameters
+#  hyperparameters
 H = 200 # number of hidden layer neurons
 batch_size = 10 # every how many episodes to do a param update?
 learning_rate = 1e-4
