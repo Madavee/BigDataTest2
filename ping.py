@@ -135,7 +135,7 @@ while True:
     prev_x = None
 
  
-  if reward != 0: # Pong has either +1 or -1 reward exactly when game ends.
+  if reward != 0: #Pong has either +1 or -1 reward exactly when game ends.
        RAM = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024.0
        time_elapsed = (time.process_time()-time_start)
 
